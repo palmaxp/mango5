@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+}
+.order-bump-kiwify {
+  width: 680px;
+  border: 5px solid #a0aec0;
+  border-style: dashed;
+  background-color: #f4f5f7;
+  border-radius: 5px;
+  color: #535353;
+}
+.card-head {
+  text-align: center;
+  background-color: #e2e8f0;
+}
+.order-bump-kiwify h1 {
+  padding: 10px 0;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #3182ce;
+}
+.order-bump-kiwify label {
+  display: inline-block;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  padding: 28px 0 38px 0;
+  width: 464px;
+  color: #71809f;
+  font-weight: bold;
+}
+.order-bump-kiwify label span {
+  font-weight: 900;
+  color: #e02424;
+  border-bottom: 2px solid red;
+}
+.order-bump-kiwify .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.order-bump-kiwify form {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px #e0e0e0;
+  border-radius: 5px;
+}
+.order-bump-kiwify input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  margin-left: 6px;
+  margin-right: 15px;
+}
+.order-bump-kiwify .form::before {
+  content: url(./img/arrow.png);
+}

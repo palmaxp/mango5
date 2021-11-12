@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: inherit;
+  font-family: "Lato", sans-serif;
+  color: #132435;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 12px;
+}
+
+ul li {
+  max-width: 372px;
+  font-size: 22px;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 6px 0;
+}
+
+ul li + li {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 2px 0;
+}
+
+.contractor-data {
+  margin-top: 22px;
+}
+
+.form-service-provided {
+  margin-top: 49px;
+}
+
+.form-service-provided label {
+  display: block;
+  font-size: 12px;
+}
+
+.form-service-provided div {
+  border: 1px solid #132435;
+  padding: 10px;
+  max-width: 370px;
+  min-height: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.service-data {
+  margin-top: 48px;
+}
+
+.left {
+  min-width: 40%;
+}
+
+.right {
+  margin-top: 45px;
+  text-align: right;
+}
+
+#data {
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn {
+  text-align: left;
+}
+
+.btn .label {
+  font-size: 16px;
+}
+
+.btn span {
+  display: block;
+  margin-top: 50px;
+}
+
+.btn div {
+  display: block;
+  margin-top: 11px;
+  background-color: #132435;
+  padding: 15px 64px 15px 20px;
+  color: white;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

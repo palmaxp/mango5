@@ -1,0 +1,622 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input::placeholder,
+textarea::placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-template {
+  display: block;
+  width: 270px;
+  height: 200px;
+  background-color: gray;
+}
+
+body {
+  background-color: #888;
+}
+
+form {
+  margin: 15px 0;
+  padding: 20px;
+  max-width: 720px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.header {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header select {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 0 160px !important;
+          flex: 0 0 160px !important;
+}
+
+.header img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+}
+
+span {
+  color: text-color !important;
+}
+
+.nav-tabs .nav-item {
+  width: 50%;
+}
+
+.pay-content {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.pay-ticket {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.pay-pix {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.edit-parcels {
+  color: #bbbbbb;
+  text-decoration: underline;
+}
+
+.tab-pane {
+  display: none;
+  border: 1px solid #dee2e6;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.tab-pane .tab-pane-2-title {
+  display: block;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+li a {
+  display: none;
+}
+
+.edit-parcels:hover {
+  color: primary-color;
+}
+
+.input-group .area {
+  width: 100%;
+}
+
+.input-group .area label {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-size: 20px;
+}
+
+.input-group .area input[type="text"],
+.input-group .area input[type="email"],
+.input-group .area input[type="password"] {
+  padding: 20px 10px 20px 35px;
+}
+
+.date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.date .input-group {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 47%;
+          flex: 0 1 47%;
+}
+
+.date .input-group .area label {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-size: 20px;
+}
+
+.date .input-group .area input[type="text"],
+.date .input-group .area input[type="email"],
+.date .input-group .area input[type="password"] {
+  padding: 20px 10px 20px 35px;
+}
+
+.pay-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4%;
+  color: primary-color;
+}
+
+.pay-info .input-group-2 .area {
+  position: relative;
+}
+
+.pay-info .input-group-2 .area label {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  font-size: 20px;
+}
+
+.pay-info .input-group-2 .area svg {
+  width: 20px;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+}
+
+.pay-info .input-group-2 .area label.active svg {
+  cursor: pointer;
+  width: 20px;
+  top: 2px;
+  left: 3px;
+}
+
+.pay-info .input-group-2 .area label.active svg g {
+  fill: white !important;
+}
+
+.pay-info .input-group-2 .area button {
+  padding: 10px 10px 10px 35px;
+}
+
+i {
+  font-size: 20px;
+}
+
+select {
+  padding: 4px 16px;
+}
+
+.span-style {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.cac {
+  display: none;
+}
+
+.cac .cac-text {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cac div {
+  color: #bbbbbb;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cac button {
+  width: 100%;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.33333;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+  outline: currentcolor none medium;
+  -webkit-transition: all 0.6s cubic-bezier(0.2, 1, 0.22, 1) 0s;
+  transition: all 0.6s cubic-bezier(0.2, 1, 0.22, 1) 0s;
+  border-radius: 6px;
+  color: white;
+  background: #7cd063 none repeat scroll 0% 0%;
+  margin: 16px 0px;
+}
+
+.cac .cac-card {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cac .cac-container {
+  margin-top: 10px;
+}
+
+.pay-info {
+  position: relative;
+}
+
+.pay-info .area label i {
+  color: primary-color !important;
+}
+
+.pay-info .area label.active {
+  position: absolute;
+  top: 11px !important;
+  color: white !important;
+}
+
+.pay-info .area label.active i {
+  color: white !important;
+}
+
+.pay-info .area:hover i {
+  color: white !important;
+  cursor: pointer;
+}
+
+.pay-info .area:hover svg {
+  cursor: pointer;
+}
+
+.pay-info .area:hover svg g {
+  fill: white !important;
+}
+
+.tab-pane-2-2 {
+  border-left: 1px solid #dee2e6;
+}
+
+.nav {
+  display: none;
+}
+
+.active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav.active {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
+.pay-ticket,
+.pay-pix {
+  display: none;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+}
+
+.pay-ticket h2,
+.pay-pix h2 {
+  color: text-color;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+.pay-ticket ul,
+.pay-pix ul {
+  list-style-type: disc;
+  padding: 0px 0px 0px 20px !important;
+  font-size: 16px;
+  margin: 0;
+}
+
+.pay-ticket li,
+.pay-pix li {
+  color: text-color;
+  margin-top: 10px;
+}
+
+.pay-ticket li:first-child,
+.pay-pix li:first-child {
+  margin: 0;
+}
+
+.pay-ticket .input-group,
+.pay-pix .input-group {
+  margin-top: 10px;
+}
+
+.pay-ticket span,
+.pay-pix span {
+  font-weight: 600 !important;
+}
+
+.footer {
+  margin-top: 10px;
+  color: text-color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer div {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.footer div:first-child {
+  margin-top: 0;
+}
+
+.modalSingIn {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 24px;
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+.modalSingIn .modal-content {
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.modalSingIn .modal-content .modal-header {
+  display: block;
+  margin: 0 auto;
+}
+
+.modalSingIn .modal-content .modal-header .modal-title {
+  color: text-color;
+}
+
+.modalSingIn .modal-content .modal-body .warning {
+  color: text-color;
+}
+
+.modalSingIn .modal-content .modal-body .currentMail {
+  display: block;
+  color: text-color;
+  font-weight: 600;
+  margin: 16px 0 16px 0;
+}
+
+.modalSingIn .modal-content .modal-body .text-group {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.modalSingIn .modal-content .modal-body .text-group div {
+  color: text-color;
+}
+
+.modalSingIn .modal-content .modal-body .text-group div:nth-child(2) {
+  margin: 8px 0;
+}
+
+.modalSingIn .modal-content .modal-body .text-group div:last-child a {
+  color: primary-color;
+}
+
+.modalSingIn .modal-content .modal-body button {
+  display: block;
+  width: 100%;
+  margin: 16px 0 0 0;
+  background-color: primary-color;
+  border-color: primary-color;
+}
+
+.modalSingIn .modal-content .modal-body a {
+  color: #888;
+  text-decoration: underline;
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.modalSingIn .modal-content {
+  -webkit-animation: modal 0.3s;
+          animation: modal 0.3s;
+}
+
+@-webkit-keyframes modal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -60px, 0);
+            transform: translate3d(0, -60px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -60px, 0);
+            transform: translate3d(0, -60px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .card-preview {
+    display: none;
+  }
+  .input-group {
+    max-width: 100%;
+  }
+  .date {
+    display: block;
+  }
+  .date .input-group {
+    width: 100%;
+  }
+  .date .input-group input {
+    margin-bottom: 20px;
+  }
+  .tab-pane-1 .tab-pane-2-1,
+  .tab-pane-2 .tab-pane-2-1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+  }
+  .tab-pane-1 .tab-pane-2-2,
+  .tab-pane-2 .tab-pane-2-2 {
+    border: 0;
+    padding-top: 10px;
+  }
+  .pay-ticket ul,
+  .pay-pix ul {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 497px) {
+  .nav-link {
+    padding: 16px 8px;
+    font-size: 14px;
+  }
+  .pay-info {
+    display: block;
+  }
+  .pay-info .input-group-2 {
+    margin-top: 10px;
+  }
+  .pay-info .input-group-2:first-child {
+    margin-top: 0px;
+  }
+  .pay-info button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 !important;
+  }
+  .pay-info button.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header {
+    width: 100%;
+  }
+  .header .nation {
+    display: block;
+    max-width: 300px;
+  }
+  .header img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

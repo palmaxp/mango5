@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input::placeholder,
+textarea::placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+$primary-color: #17a2b8;
+$text-color: #495057;
+$text-dark-color: #444;
+$light-gray: #dee2e6;
+body {
+  background-color: #79979b;
+}
+.container {
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.comfirm-content {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  padding: 40px 20px;
+  max-width: 690px;
+  background-color: white;
+}
+.confirm-head {
+  h1 {
+    color: $primary-color;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  h4 {
+    margin: 35px 0 0 0;
+    font-size: 20px;
+    color: $primary-color;
+  }
+  div {
+    margin-top: 20px;
+    color: $text-color;
+  }
+}
+.payment-list {
+  .payment-item {
+    border: 1px solid $light-gray;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    h5 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      font-weight: 400;
+      color: $text-dark-color;
+    }
+    table {
+      width: 100%;
+      th {
+        font-weight: 400;
+        color: $text-color;
+      }
+      td {
+        font-weight: 400;
+        color: $text-dark-color;
+      }
+    }
+  }
+}
+.group-button {
+  text-align: center;
+  div {
+    color: $text-color;
+  }
+  button {
+    margin: 10px 0;
+    border-color: $primary-color;
+    background-color: $primary-color;
+  }
+}
+@media only screen and (max-width: 760px) {
+  h1 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+  table {
+    th,
+    td {
+      margin: 0 10px;
+      font-size: 13px;
+    }
+  }
+}

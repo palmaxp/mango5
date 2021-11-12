@@ -1,0 +1,139 @@
+a:focus {
+  color: #132435 !important;
+}
+a:hover {
+  color: #f8941a !important;
+}
+nav {
+  background-color: #132435;
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+.nav-content span {
+  color: #bababa;
+  font-size: 20px;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-content img {
+  width: 188px;
+  max-width: 100%;
+}
+.img-effect {
+  background-color: rgba(73, 84, 96, 0.8);
+}
+.btn {
+  background-color: #f8941a;
+}
+.btn:hover {
+  background-color: #f37418;
+}
+.dx-btn:hover {
+  color: #f8941a;
+}
+.dx-footer {
+  background-color: #132435;
+}
+.dx-footer span {
+  color: #bababa;
+}
+.dx-widget-footer {
+  margin: 0 auto;
+  text-align: center;
+}
+.dx-widget-logo img {
+  width: 188px;
+}
+.dx-box-1 {
+  padding: 55px 0;
+}
+.form-search {
+  justify-content: center;
+}
+.input-search {
+  max-width: 450px;
+}
+.dx-header {
+  display: flex;
+  align-items: center;
+  height: 350px;
+}
+.text-box {
+  display: flex;
+  align-items: center;
+}
+.box-articles {
+  max-height: 50px;
+  overflow: hidden;
+  opacity: 0.7;
+  padding-right: 15px;
+}
+.box-articles-single {
+  max-height: auto;
+  opacity: 0.7;
+}
+.rating {
+  border-left: 1px solid #ececec;
+  padding-left: 15px;
+}
+.dx-sticky {
+  margin-bottom: 30px;
+}
+.active-link {
+  color: #f8941a !important;
+}
+.archive-list a:hover {
+  color: unset !important;
+}
+.single-article a {
+  color: #f8941a;
+}
+.single-article a:hover {
+  text-decoration: underline;
+}
+.box-articles-single img {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+}
+@media only screen and (max-width: 980px) {
+  input::placeholder {
+    font-size: 12px;
+  }
+  .categories-list {
+    order: 1;
+  }
+  .archive-list {
+    order: 0;
+  }
+  .text-box {
+    display: block;
+  }
+  .box-articles {
+    padding: 0;
+  }
+  .rating {
+    border: 0;
+    padding: 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 562px) {
+  .nav-content {
+    display: block;
+  }
+  .nav-content span {
+    display: block;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  .nav-content img {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cabin, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+.order-bump-hotmart {
+  width: 495px;
+  border: 2px solid #e25032;
+  border-style: dashed;
+  background-color: #f7faf9;
+  border-radius: 5px;
+  color: #535353;
+}
+.card-head {
+  text-align: center;
+  background-color: #edf2f5;
+}
+.order-bump-hotmart h1 {
+  padding: 10px 0;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+}
+.order-bump-hotmart label {
+  display: inline-block;
+  letter-spacing: 0.005em;
+  width: 340px;
+}
+.order-bump-hotmart .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+.order-bump-hotmart form {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  background: #fbfdfd;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 1px #e3e3e3;
+  border-radius: 5px;
+}
+.order-bump-hotmart input[type="checkbox"] {
+  margin: 20px;
+}
+.order-bump-hotmart .form::before {
+  content: url(./img/arrow.png);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cabin, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+.order-bump-hotmart {
+  width: 495px;
+  border: 2px solid #e25032;
+  border-style: dashed;
+  background-color: #f7faf9;
+  border-radius: 5px;
+  color: #535353;
+}
+.card-head {
+  text-align: center;
+  background-color: #edf2f5;
+}
+.order-bump-hotmart h1 {
+  padding: 10px 0;
+  font-weight: bold;
+  letter-spacing: 0.075em;
+}
+.order-bump-hotmart label {
+  display: inline-block;
+  letter-spacing: 0.005em;
+  width: 340px;
+}
+.order-bump-hotmart .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+.order-bump-hotmart form {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  background: #fbfdfd;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 1px #e3e3e3;
+  border-radius: 5px;
+}
+.order-bump-hotmart input[type="checkbox"] {
+  margin: 20px;
+}
+.order-bump-hotmart .form::before {
+  content: url(./img/arrow.png);
+}

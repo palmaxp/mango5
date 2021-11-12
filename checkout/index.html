@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mango5 - Checkout</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="modalSingIn" id="modalSingIn" tabindex="-1" role="dialog" aria-labelledby="modalSingInTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="">Entre com a sua conta</h5>
+        </div>
+        <div class="modal-body">
+          <div class="warning">Este email já está cadastrado.</div>
+          <div class="currentMail">nandokferrari@gmail.com</div>
+          <div class="input-group">
+            <div class="area">
+              <label for="pass">
+                <i class="las la-key"></i>
+              </label>
+              <input name="pass" id="pass" class="form-control" type="password" placeholder="Sua senha" autocomplete="current-password" required>
+            </div>
+          </div>
+          <button class="btn btn-primary">Fazer Login</button>
+          <div class="text-group">
+            <div><a href="#">Esqueci minha senha</a></div>
+            <div>ou</div>
+            <div><a href="#">Quero comprar com outro e-mail</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <form>
+      <div class="header input-group mb-3 ">
+        <img src="img/logo.svg" alt="logo">
+        <select class="custom-select" name="nation" id="nation">
+          <option value="national">Brasil</option>
+          <option value="international">Internacional</option>
+        </select>
+      </div>
+      <div class="personal-info">
+        <div class="input-group mb-3">
+          <div class="area">
+            <label for="name">
+              <i class="las la-user"></i>
+            </label>
+            <input name="name" id="name" class="form-control" type="text" placeholder="Digite seu nome completo">
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <div class="area">
+            <label for="email">
+              <i class="las la-envelope"></i>
+            </label>
+            <input name="email" id="email" class="form-control input-yourmail" type="email" placeholder="Digite seu e-mail">
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <div class="area">
+            <label for="cpf">
+              <i class="las la-lock"></i>
+            </label>
+            <input name="cpf" id="cpf" class="form-control" type="text" placeholder="CPF/CNPJ">
+          </div>
+        </div>
+      </div>
+
+      <div class="pay-info form-group">
+        <div class="input-group-2">
+          <div class="area">
+            <label for="btn-credit-card" class="active">
+              <i class="las la-credit-card"></i>
+            </label>
+            <button type="button" id="btn-credit-card" class="btn btn-outline-info active">Cartão de crédito</button>
+          </div>
+        </div>
+        <div class="input-group-2">
+          <div class="area">
+            <label for="btn-ticket">
+              <i class="las la-file-alt"></i>
+            </label>
+            <button type="button" id="btn-ticket" class="btn btn-outline-info">Boleto</button>
+          </div>
+        </div>
+        <div class="input-group-2">
+          <div class="area">
+            <label for="btn-pix">
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <defs />
+                <g fill="#17a2b8" id="pix" fill-rule="evenodd">
+                  <path d="M112.57 391.19c20.056 0 38.928-7.808 53.12-22l76.693-76.692c5.385-5.404 14.765-5.384 20.15 0l76.989 76.989c14.191 14.172 33.045 21.98 53.12 21.98h15.098l-97.138 97.139c-30.326 30.344-79.505 30.344-109.85 0l-97.415-97.416h9.232zm280.068-271.294c-20.056 0-38.929 7.809-53.12 22l-76.97 76.99c-5.551 5.53-14.6 5.568-20.15-.02l-76.711-76.693c-14.192-14.191-33.046-21.999-53.12-21.999h-9.234l97.416-97.416c30.344-30.344 79.523-30.344 109.867 0l97.138 97.138h-15.116z" />
+                  <path d="M22.758 200.753l58.024-58.024h31.787c13.84 0 27.384 5.605 37.172 15.394l76.694 76.693c7.178 7.179 16.596 10.768 26.033 10.768 9.417 0 18.854-3.59 26.014-10.75l76.989-76.99c9.787-9.787 23.331-15.393 37.171-15.393h37.654l58.3 58.302c30.343 30.344 30.343 79.523 0 109.867l-58.3 58.303H392.64c-13.84 0-27.384-5.605-37.171-15.394l-76.97-76.99c-13.914-13.894-38.172-13.894-52.066.02l-76.694 76.674c-9.788 9.788-23.332 15.413-37.172 15.413H80.782L22.758 310.62c-30.344-30.345-30.344-79.524 0-109.868" />
+                </g>
+              </svg>
+            </label>
+            <button type="button" id="btn-pix" class="btn btn-outline-info">Pix</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pay-content active">
+        <ul class="nav nav-tabs card-select active">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Cartão de crédito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dois cartões</a>
+          </li>
+        </ul>
+        <div class="tab-pane tab-pane-1 p-3 active">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="input-group mb-3">
+                <div class="area">
+                  <label for="card">
+                    <i class="las la-credit-card"></i>
+                  </label>
+                  <input name="card" id="card" class="form-control" type="text" placeholder="Número do Cartão" autocomplete="cc-number" required>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="area">
+                  <label for="card-owner-name">
+                    <i class="las la-user"></i>
+                  </label>
+                  <input name="card-owner-name" id="card-owner-name" class="form-control" type="text" placeholder="Nome do titular" autocomplete="cc-name">
+                </div>
+              </div>
+              <div class="date form-group my-3 ">
+                <div class="input-group">
+                  <div class="area">
+                    <label for="cc-exp">
+                      <i class="las la-calendar-minus"></i>
+                    </label>
+                    <input name="cc-exp" id="cc-exp" class="form-control" type="text" placeholder="MM/YY" autocomplete="cc-exp" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <div class="area">
+                    <label for="cvc">
+                      <i class="las la-lock"></i>
+                    </label>
+                    <input name="cvc" id="cvc" class="form-control" type="text" placeholder="CVC/CVV" autocomplete="cc-csc" required>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <span class="d-block span-style">Opções de parcelamento</span>
+                <span class="span-style">5x R$ 5,12</span>
+                <div class="btn btn-link py-0 edit-parcels">Editar Parcelas</div>
+              </div>
+            </div>
+            <div class="card-preview col-lg-6 col-md-12 border-left">
+              <div class="card-template"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane tab-pane-2 p-3">
+          <div class="row">
+            <div class="tab-pane-2-1 col-lg-6 col-md-12 ">
+              <span class="tab-pane-2-title">Cartão 1</span>
+              <div class="input-group mb-3">
+                <div class="area">
+                  <label for="creditCardValue">
+                    <i class="las la-dollar-sign"></i>
+                  </label>
+                  <input inputmode="numeric" name="creditCardValue" id="creditCardValue" class="form-control" type="text" placeholder="Valor" value="23,50" name="creditCardValue" autocomplete="cc-number" required>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="area">
+                  <label for="card">
+                    <i class="las la-credit-card"></i>
+                  </label>
+                  <input name="card" id="card" class="form-control" type="text" placeholder="Número do Cartão" autocomplete="cc-number" required>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="area">
+                  <label for="card-owner-name">
+                    <i class="las la-user"></i>
+                  </label>
+                  <input name="card-owner-name" id="card-owner-name" class="form-control" type="text" placeholder="Nome do titular" autocomplete="cc-name">
+                </div>
+              </div>
+              <div class="date form-group my-3">
+                <div class="input-group">
+                  <div class="area">
+                    <label for="cc-exp">
+                      <i class="las la-calendar-minus"></i>
+                    </label>
+                    <input name="cc-exp" id="cc-exp" class="form-control" type="text" placeholder="MM/YY" autocomplete="cc-exp" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <div class="area">
+                    <label for="cvc">
+                      <i class="las la-lock"></i>
+                    </label>
+                    <input name="cvc" id="cvc" class="form-control" type="text" placeholder="CVC/CVV" autocomplete="cc-csc" required>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <span class="span-style">5x R$ 5,12</span>
+                <div class="btn btn-link py-0 edit-parcels">Editar Parcelas</div>
+              </div>
+            </div>
+            <div class="tab-pane-2-2 col-lg-6 col-md-12">
+              <span class="tab-pane-2-title">Cartão 2</span>
+              <div class="input-group mb-3">
+                <div class="area">
+                  <label for="creditCardValue">
+                    <i class="las la-dollar-sign"></i>
+                  </label>
+                  <input inputmode="numeric" name="creditCardValue" id="creditCardValue" class="form-control" type="text" placeholder="Valor" value="23,50" name="creditCardValue" autocomplete="cc-number" required>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="area">
+                  <label for="card">
+                    <i class="las la-credit-card"></i>
+                  </label>
+                  <input name="card" id="card" class="form-control" type="text" placeholder="Número do Cartão" autocomplete="cc-number" required>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="area">
+                  <label for="card-owner-name">
+                    <i class="las la-user"></i>
+                  </label>
+                  <input name="card-owner-name" id="card-owner-name" class="form-control" type="text" placeholder="Nome do titular" autocomplete="cc-name">
+                </div>
+              </div>
+              <div class="date form-group my-3 ">
+                <div class="input-group">
+                  <div class="area">
+                    <label for="cc-exp">
+                      <i class="las la-calendar-minus"></i>
+                    </label>
+                    <input name="cc-exp" id="cc-exp" class="form-control" type="text" placeholder="MM/YY" autocomplete="cc-exp" required>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <div class="area">
+                    <label for="cvc">
+                      <i class="las la-lock"></i>
+                    </label>
+                    <input name="cvc" id="cvc" class="form-control" type="text" placeholder="CVC/CVV" autocomplete="cc-csc" required>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <span class="span-style">5x R$ 5,12</span>
+                <div class="btn btn-link py-0 edit-parcels">Editar Parcelas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pay-ticket">
+        <h2>Atente-se aos detalhes:</h2>
+        <ul>
+          <li>Boleto (somente à vista)</li>
+          <li>Pagamentos com Boleto Bancário levam até 3 dias úteis para serem compensados e então terem os produtos liberados</li>
+          <li>Atente-se ao vencimento do boleto. Você pode pagar o boleto em qualquer banco ou casa lotérica até o dia do vencimento</li>
+          <li>Depois do pagamento, verifique seu e-mail para receber os dados de acesso ao produto (verifique também a caixa de SPAM)</li>
+        </ul>
+        <div class="input-group">
+          <div class="area">
+            <label for="cpf">
+              <i class="las la-lock"></i>
+            </label>
+            <input name="cpf" id="cpf" class="form-control" type="text" placeholder="CPF/CNPJ">
+          </div>
+        </div>
+      </div>
+
+      <div class="pay-pix">
+        <h2>Pague com o Pix, qualquer dia, a qualquer hora:</h2>
+        <ul>
+          <li>Valor à vista: <span>R$ 47,00</span>.</li>
+          <li>Liberação imediata!</li>
+          <li>É simples, só clicar no botão <span>"Comprar Agora"</span> abaixo;</li>
+          <li>E usar o aplicativo do seu banco selecionando a opção PIX;</li>
+          <li>Super seguro. O pagamento PIX foi desenvolvido pelo Banco Central do Brasil.</li>
+        </ul>
+      </div>
+
+      <div class="cac active">
+        <span class="cac-text">A chave da criação</span>
+        <div class="payment-details">1x de R$ 47,00</div>
+        <button class="btn btn-success w-100 py-3 my-3" type="submit">Comprar Agora</button>
+      </div>
+      <div class="cac cac-2">
+        <span class="cac-text">A chave da criação</span>
+        <div class="cac-container">
+          <span class="cac-card">Cartão 1</span>
+          <div class="payment-details">1x de R$ 47,00</div>
+        </div>
+        <div class="cac-container">
+          <span class="cac-card">Cartão 2</span>
+          <div class="payment-details">1x de R$ 47,00</div>
+        </div>
+        <button class="btn btn-success w-100 py-3 my-3" type="submit">Comprar Agora</button>
+      </div>
+
+      <div class="footer">
+        <div>
+          <span>
+            Precisa de ajuda?</span> <a href="#">Contato do(a) vendedor(a) - seuemail@suporte.com</a>
+        </div>
+        <div>
+          *Parcelamento com tarifa de x% a.m
+        </div>
+        <div>
+          Mango5 está processando este pedido a serviço de {produtor}, ao continuar, você concorda com os <a href="#">Termos de Compra</a>
+        </div>
+        <div>
+          Mango5 © 2021 - Todos os direitos reservados
+          REF.: {id da oferta}
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

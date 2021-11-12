@@ -1,0 +1,163 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+article,
+input::placeholder,
+textarea::placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+body {
+  background-color: #79979b;
+}
+
+.container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.comfirm-content {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  padding: 40px 20px;
+  max-width: 690px;
+  background-color: white;
+}
+
+.confirm-head h1 {
+  color: #17a2b8;
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.confirm-head h4 {
+  margin: 35px 0 0 0;
+  font-size: 20px;
+  color: #17a2b8;
+}
+
+.confirm-head div {
+  margin-top: 20px;
+  color: #495057;
+}
+
+.payment-list .payment-item {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.payment-list .payment-item h5 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  color: #444;
+}
+
+.payment-list .payment-item table {
+  width: 100%;
+}
+
+.payment-list .payment-item table th {
+  font-weight: 400;
+  color: #495057;
+}
+
+.payment-list .payment-item table td {
+  font-weight: 400;
+  color: #444;
+}
+
+.group-button {
+  text-align: center;
+}
+
+.group-button div {
+  color: #495057;
+}
+
+.group-button button {
+  margin: 10px 0;
+  border-color: #17a2b8;
+  background-color: #17a2b8;
+}
+
+@media only screen and (max-width: 760px) {
+  h1 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+  table th,
+  table td {
+    margin: 0 10px;
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
