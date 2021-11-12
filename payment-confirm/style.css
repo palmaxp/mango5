@@ -66,6 +66,13 @@ body {
   background-color: #79979b;
 }
 
+img {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -81,21 +88,25 @@ body {
   margin-top: 20px;
   margin-bottom: 80px;
   border-radius: 10px;
-  padding: 40px 20px;
+  padding: 20px;
   max-width: 690px;
   background-color: white;
+}
+
+.confirm-head img {
+  margin-top: 20px;
 }
 
 .confirm-head h1 {
   color: #17a2b8;
   text-align: center;
-  margin: 0;
+  margin: 40px 0 0 0;
   font-size: 25px;
   font-weight: 600;
 }
 
 .confirm-head h4 {
-  margin: 35px 0 0 0;
+  margin: 40px 0 0 0;
   font-size: 20px;
   color: #17a2b8;
 }
@@ -114,23 +125,25 @@ body {
 
 .payment-list .payment-item h5 {
   font-size: 18px;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
   font-weight: 400;
   color: #444;
 }
 
-.payment-list .payment-item table {
-  width: 100%;
+.payment-list .payment-item .table {
+  margin-bottom: 0;
 }
 
-.payment-list .payment-item table th {
+.payment-list .payment-item .table .table-wp .th {
   font-weight: 400;
+  font-size: 14px;
   color: #495057;
 }
 
-.payment-list .payment-item table td {
-  font-weight: 400;
-  color: #444;
+.payment-list .payment-item .table .table-wp .td {
+  margin-top: 4px;
+  font-weight: 500;
+  color: #495057;
 }
 
 .group-button {
@@ -142,7 +155,7 @@ body {
 }
 
 .group-button button {
-  margin: 10px 0;
+  margin: 10px 0 40px 0;
   border-color: #17a2b8;
   background-color: #17a2b8;
 }
@@ -158,6 +171,15 @@ body {
   table td {
     margin: 0 10px;
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .table .table-wp {
+    margin-bottom: 20px;
+  }
+  .table .table-wp:last-child {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
