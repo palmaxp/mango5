@@ -64,8 +64,8 @@ textarea::placeholder {
 
 .container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .card-template {
@@ -89,16 +89,16 @@ form {
 
 .header {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header select {
   -webkit-box-flex: 0 !important;
-      -ms-flex: 0 0 160px !important;
-          flex: 0 0 160px !important;
+  -ms-flex: 0 0 160px !important;
+  flex: 0 0 160px !important;
 }
 
 .header img {
@@ -178,14 +178,14 @@ li a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .date .input-group {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 47%;
-          flex: 0 1 47%;
+  -ms-flex: 0 1 47%;
+  flex: 0 1 47%;
 }
 
 .date .input-group .area label {
@@ -207,7 +207,7 @@ li a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 4%;
   color: primary-color;
 }
@@ -217,6 +217,7 @@ li a {
 }
 
 .pay-info .input-group-2 .area label {
+  color: #17a2b8;
   position: absolute;
   top: 7px;
   left: 8px;
@@ -282,11 +283,11 @@ select {
   font-weight: 400;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
   outline: currentcolor none medium;
   -webkit-transition: all 0.6s cubic-bezier(0.2, 1, 0.22, 1) 0s;
   transition: all 0.6s cubic-bezier(0.2, 1, 0.22, 1) 0s;
@@ -351,15 +352,15 @@ select {
   display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .nav.active {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
-      -ms-flex-direction: row !important;
-          flex-direction: row !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
 }
 
 .pay-ticket,
@@ -415,8 +416,8 @@ select {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer span {
@@ -443,11 +444,11 @@ select {
   left: 0px;
   z-index: 999;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 24px;
   -webkit-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
@@ -516,19 +517,19 @@ select {
 
 .modalSingIn .modal-content {
   -webkit-animation: modal 0.3s;
-          animation: modal 0.3s;
+  animation: modal 0.3s;
 }
 
 @-webkit-keyframes modal {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    transform: translate3d(0, -60px, 0);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -536,12 +537,12 @@ select {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    transform: translate3d(0, -60px, 0);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -601,8 +602,8 @@ select {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .header {
     width: 100%;
