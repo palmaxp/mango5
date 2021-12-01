@@ -100,6 +100,26 @@ nav {
   margin: 15px auto;
   max-width: 100%;
 }
+i {
+  color: #f8941a;
+}
+i:hover {
+  color: #132435;
+}
+.box-articles {
+  color: #525252;
+}
+.dx-widget-title {
+  transition: all 0.2s linear;
+}
+.article-post:hover {
+  outline: 1px solid #bababa;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 0;
+}
+.article-post:hover .dx-widget-title {
+  color: #f8941a;
+}
 @media only screen and (max-width: 980px) {
   input::placeholder {
     font-size: 12px;

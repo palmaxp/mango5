@@ -6365,8 +6365,6 @@ h6 {
   height: auto;
   background-color: #fff;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
 }
 .dx-box-content {
   padding: 30px;
