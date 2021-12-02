@@ -109,6 +109,9 @@ i:hover {
 .box-articles {
   color: #525252;
 }
+.box-articles p {
+  color: #525252;
+}
 .dx-widget-title {
   transition: all 0.2s linear;
 }
@@ -119,6 +122,12 @@ i:hover {
 }
 .article-post:hover .dx-widget-title {
   color: #f8941a;
+}
+.icon-link i {
+  color: #f8941a;
+}
+.icon-link i:hover {
+  color: #f37418;
 }
 @media only screen and (max-width: 980px) {
   input::placeholder {
